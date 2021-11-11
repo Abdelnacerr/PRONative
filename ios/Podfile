@@ -12,6 +12,8 @@ target 'nomadpay' do
     :hermes_enabled => false
   )
 
+  pod 'RNImageCropPicker', :path => '../node_modules/react-native-image-crop-picker'
+
   target 'nomadpayTests' do
     inherit! :complete
     # Pods for testing

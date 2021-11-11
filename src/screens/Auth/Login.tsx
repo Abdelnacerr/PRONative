@@ -4,12 +4,12 @@ import {RootStackNavProps} from '../../interfaces/RootStackParamList';
 import PhoneNumberInput from './RNPhoneNumberInput';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import {theme} from '../../themes/themes';
+import ChangeLanguage from '../../localization/Localization';
 
 interface LoginProps {}
 type Props = RootStackNavProps<'Login'> & LoginProps;
 
 const Login: FC<Props> = ({navigation}): JSX.Element => {
-
   return (
     <View style={styles.container}>
       <View style={styles.info}>
@@ -42,6 +42,7 @@ const Login: FC<Props> = ({navigation}): JSX.Element => {
       <View style={styles.inputField}>
         <PhoneNumberInput navigation={navigation} />
       </View>
+      <ChangeLanguage />
     </View>
   );
 };
