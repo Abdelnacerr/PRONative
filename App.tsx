@@ -12,7 +12,6 @@ const App = () => {
       <Provider store={store}>
         <PersistGate loading={null} persistor={persistor}>
           <RootStack />
-          <Toast ref={ref => Toast.setRef(ref)} />
         </PersistGate>
       </Provider>
       <Toast ref={ref => Toast.setRef(ref)} />
