@@ -6,7 +6,7 @@ import QrCode from './QrCodeScreen/QrCode'
 const QrCodeScreen = () => {
 	return (
 		<CenterView>
-			<Text>QrCodeScreen</Text>
+			<QrCode />
 		</CenterView>
 	)
 }

@@ -1,16 +1,13 @@
 import React from 'react'
 import {
-	AppRegistry,
 	StyleSheet,
 	Text,
-	View,
 	TouchableOpacity,
 	Linking,
 	SafeAreaView,
 } from 'react-native'
 
 import QRCodeScanner from 'react-native-qrcode-scanner'
-import { RNCamera } from 'react-native-camera'
 
 const onSuccess = (e: any) => {
 	Linking.openURL(e.data).catch((err) =>

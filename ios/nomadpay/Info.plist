@@ -6,6 +6,8 @@
 	<string>NomadPay is requesting access to the camera</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>NomadPay is requesting access to the photo library</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>NomadPay is requesting access to the microphone</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
