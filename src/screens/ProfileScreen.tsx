@@ -1,8 +1,11 @@
 import React from 'react';
-import {SafeAreaView, StyleSheet, View} from 'react-native';
+import {StyleSheet} from 'react-native';
 import {Avatar} from 'react-native-elements';
 import {theme} from '../themes/themes';
 import ImagePicker from 'react-native-image-crop-picker';
+import ProfileDetails from './ProfileDetails';
+import {Center, NativeBaseProvider} from 'native-base';
+import {t} from '../localization/Localization';
 
 const Profile = () => {
   const [profilePic, setProfilePic] = React.useState('');
@@ -19,8 +22,8 @@ const Profile = () => {
   };
 
   return (
-    <SafeAreaView>
-      <View style={styles.container}>
+    <NativeBaseProvider>
+      <Center marginTop={4}>
         <Avatar
           rounded
           size="xlarge"
@@ -45,19 +48,12 @@ const Profile = () => {
             onPress={AvatarPicker}
           />
         </Avatar>
-      </View>
-    </SafeAreaView>
+      </Center>
+      <ProfileDetails />
+    </NativeBaseProvider>
   );
 };
 
 export default Profile;
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginTop: theme.spacing(12),
-    backgroundColor: 'red',
-  },
-});
+const styles = StyleSheet.create({});

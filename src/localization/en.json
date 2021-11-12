@@ -1,4 +1,6 @@
 {
-	"welcome": "welcome",
-	"send-money": "send money"
+  "welcome": "welcome",
+  "send-money": "send money",
+  "edit-profile": "Edit profile",
+  "account": "Account"
 }
