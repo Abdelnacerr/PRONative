@@ -3,7 +3,7 @@ import {StyleSheet} from 'react-native';
 import Toast from 'react-native-toast-message';
 import {Provider} from 'react-redux';
 import {PersistGate} from 'redux-persist/integration/react';
-import {persistor, store} from './src/app/store';
+import {persistor, store} from './src/store/store';
 import RootStack from './src/routes/RootStack';
 
 const App = () => {

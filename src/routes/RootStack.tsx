@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { RootStackParamList } from '../interfaces/RootStackParamList'
 import { theme } from '../themes/themes'
-import { useAppSelector } from '../app/hooks'
+import { useAppSelector } from '../store/hooks'
 
 import Drawer from './Drawer'
 import Login from '../screens/Auth/Login'

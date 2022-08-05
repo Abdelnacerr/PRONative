@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button, StyleSheet, View } from 'react-native'
-import { useAppDispatch, useAppSelector } from '../app/hooks'
+import { useAppDispatch, useAppSelector } from '../store/hooks'
 import { toggleLanguage } from '../features/languageSlice'
 import i18n from 'i18n-js'
 import en from './en.json'
